@@ -1,0 +1,21 @@
+/* Empty. Add your own CSS if you like */
+body {
+	background-color: #d4f3fb;
+	font-family: "Futura" sans-serif;
+}
+.top-button {
+	margin-top: 2.7em !important;
+}
+.main-content {
+	padding: 2em 0 3em;
+}
+.forecast {
+	padding: 1em 0 1em;
+}
+.text-center {
+	background-color: rgba(105,105,105, .6);
+}
+.text-center li{
+	list-style: none;
+	padding: .25em;
+}
