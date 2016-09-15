@@ -27,7 +27,6 @@
   <body class="item-calm" ng-app="weather">
       <ion-header> 
         <ion-navbar class="bar bar-energized">
-<!--           <ion-nav-buttons side="left"><button menu-toggle="left" class="button button-icon icon ion-navicon"></button></ion-nav-buttons> -->
             <h1 class="title">Steph's Weather App</h1>
         </ion-navbar>
       </ion-header>
@@ -44,46 +43,14 @@
           <h5 class="stable">Chance of rain: {{current.currently.precipProbability}}%</h5>
         </div>
         <button class="button button-block button-positive">Hourly Forecast</button>
-        <!-- **Note that time is in UNIX time ( since midnight GMT on 1 Jan 1970), so I'll have to calculate that to get time and date -->
         <div class="forecast text-center">
           <li class="stable" ng-repeat="i in [0,1,2,3,4]">{{current.hourly.data[i].time * 1000 | date: 'h:mma'}}: {{current.hourly.data[i].temperature}} °F</div>
-         <!--  <div>+2 Hours: {{current.hourly.data[1].temperature}} °F</div>
-          <div>+3 Hours: {{current.hourly.data[2].temperature}} °F</div>
-          <div>+4 Hours: {{current.hourly.data[3].temperature}} °F</div> -->
         </div>
         <button class="button button-block button-positive">Daily Forecast</button>
         <div class="forecast text-center">
           <!-- Idea to multiply by 1000 from Sergei Basharov on Stack Overflow -->
           <li class="stable daily-forecast" ng-repeat="i in [1,2,3,4,5,6,7]">{{current.daily.data[i].time * 1000 | date:'EEE, MMM, d'}}: H {{current.daily.data[i].temperatureMax}} °F, L {{current.daily.data[i].temperatureMin}} °F</li>
-<!--           <div class="daily-forecast">+2 Days : {{current.daily.data[1].temperatureMax}} °F, L {{current.daily.data[1].temperatureMin}} °F</div>
-          <div class="daily-forecast">+3 Days : {{current.daily.data[2].temperatureMax}} °F, L {{current.daily.data[2].temperatureMin}} °F</div>
-          <div class="daily-forecast">+4 Days : {{current.daily.data[3].temperatureMax}} °F, L {{current.daily.data[3].temperatureMin}} °F</div>
-          <div class="daily-forecast">+5 Days : {{current.daily.data[4].temperatureMax}} °F, L {{current.daily.data[4].temperatureMin}} °F</div>
-          <div class="daily-forecast">+6 Days : {{current.daily.data[5].temperatureMax}} °F, L {{current.daily.data[5].temperatureMin}} °F</div>
-          <div class="daily-forecast">+7 Days : {{current.daily.data[6].temperatureMax}} °F, L {{current.daily.data[6].temperatureMin}} °F</div> -->
         </div>
       </ion-content>
-<!--       <ion-side-menus enable-menu-with-back-views="true">
-        <ion-side-menu side="left">
-          <ul>
-          <li>Hourly Weather</li>
-          <li>Daily Weather</li>
-          <li>Top Weather News</li>
-          </ul>
-        </ion-side-menu>
-        </ion-side-menus> -->
-    <!--
-      The nav bar that will be updated as we navigate between views.
-    -->
-<!--     <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
-    </ion-nav-bar> -->
-    <!--
-      The views will be rendered in the <ion-nav-view> directive below
-      Templates are in the /templates folder (but you could also
-      have templates inline in this html file if you'd like).
-    -->
-   <!--  <ion-nav-view></ion-nav-view> -->
   </body>
 </html>

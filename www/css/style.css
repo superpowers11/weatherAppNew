@@ -10,10 +10,11 @@ body {
 	padding: 2em 0 3em;
 }
 .forecast {
-	padding: 1em 0 1em;
+	padding: .75em 0 .75em;
 }
 .text-center {
-	background-color: rgba(105,105,105, .6);
+	background-color: rgba(105,105,105, .4);
+	margin: 1.8em 0 1.8em;
 }
 .text-center li{
 	list-style: none;
