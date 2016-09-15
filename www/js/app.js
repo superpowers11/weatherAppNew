@@ -49,7 +49,7 @@ weatherApp.controller('MainCtrl',
         currentWeatherType = 'default';
       }
       $scope.iconUrl = '/img/'+currentWeatherType+'.jpg';
-      currentWeatherType = currentWeatherType.replace('-',' ');
+      currentWeatherType = currentWeatherType.replace(/-/g,' ');
       $scope.iconName = currentWeatherType.charAt(0).toUpperCase() 
       + currentWeatherType.slice(1);
 

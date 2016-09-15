@@ -30,7 +30,7 @@
             <h1 class="title">Steph's Weather App</h1>
         </ion-navbar>
       </ion-header>
-      <ion-content ng-controller="MainCtrl" ng-style="{'background-image': 'url(' + iconUrl + ')'}">
+      <ion-content ng-controller="MainCtrl" style="background-image: url({{iconUrl}})">
         <button class="top-button button button-block button-positive">Current Weather in Wenham, MA</button>
         <div class="text-center main-content">
           <script>console.log("today")</script>
